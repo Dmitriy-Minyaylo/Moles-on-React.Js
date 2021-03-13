@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(94, 72, 72);
+    box-sizing: border-box;
+}
+
+.startScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 190px;
+    height: 600px;
+    width: 900px;
+    border: 2px solid rgb(204, 2, 2);
+    box-shadow: 0 0 45px rgb(231, 39, 13);
+}
+
+.startButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 0;
+    border: 5px solid white;
+    box-shadow: 0 0 15px white;
+    color: white;
+}
+
+.startButton:hover {
+    background: black url(../Start/start.png);
+    background-size: cover;
+    color: chartreuse;
+    box-shadow: 0 0 45px chartreuse;
+    margin: 0 auto;
+}
+
+.startButton:hover::after {
+    position: absolute;
+    margin-top: 280px;
+    content: "Let`s start genocide !?";
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+    text-shadow: 0 10px 55px rgb(255, 153, 0);
+    }

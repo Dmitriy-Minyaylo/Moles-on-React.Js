@@ -1,0 +1,33 @@
+.main-board {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 70px;
+}
+
+.game-field {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-items: center;
+   margin: 0 auto;
+   width: 1100px;
+   height: 700px;
+   background: cornsilk;
+   border: 3px solid black;
+   border-radius: 10px;
+   padding-left: 50px;
+   z-index: 0;
+   position: relative;
+}
+
+.score-info {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   background: rgb(156, 147, 95);
+   margin: 0 auto;
+   width: 250px;
+   height: 600px;
+   border: 3px solid black;
+   border-radius: 10px;
+}

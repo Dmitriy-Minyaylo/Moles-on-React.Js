@@ -1,0 +1,25 @@
+.game-grid {
+   height: 310px; 
+   width: 320px;
+   background: url(../Hole/hole.png) no-repeat;
+   background-size: contain;
+   border: 3px solid black ;
+   margin-left: 10px;
+   margin-top: 20px;
+   border-radius: 15px;
+   background-color: rgb(242, 248, 187);
+}
+
+.present {
+   background: url(../Hole/mole.png) no-repeat;
+   background-size: contain;
+   background-color: rgb(242, 248, 187);
+}
+
+.success {
+   background-color: rgb(61, 253, 61);
+}
+
+.fail {
+   background-color: rgb(252, 4, 4);
+}

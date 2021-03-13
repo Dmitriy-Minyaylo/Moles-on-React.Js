@@ -1,0 +1,9 @@
+.status-bar {
+   margin: 0 auto;
+   margin-top: 10px;
+   color: rgb(46, 112, 7);
+}
+
+.info {
+   margin-left: 10px;
+}
