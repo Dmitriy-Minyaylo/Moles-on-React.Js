@@ -1,11 +1,13 @@
-import { ACTION_SET_COUNT_WIN, ACTION_SET_COUNT_FAIL, ACTION_SET_LVL, ACTION_SET_TIMER } from '../index'
+import { ACTION_SET_COUNT_WIN, ACTION_SET_COUNT_FAIL, ACTION_SET_LVL, ACTION_SET_TIMER, ACTION_SET_RANDOM } from './constAction'
+
 
 //стартовое состояние 
 const initialState = {
    countWin: 0,
    countFail: 0,
    lvl: 1,
-   timer: 4000
+   timer: 4000,
+   random: Math.floor(Math.random() * 6)
 }
 
 export const rootReducer = (state = initialState, action) => {
@@ -16,6 +18,7 @@ export const rootReducer = (state = initialState, action) => {
             countWin: action.payload
          };
       case ACTION_SET_COUNT_FAIL:
+         console.log("in reducer", action.payload);
          return {
             ...state,
             countFail: action.payload
@@ -29,6 +32,11 @@ export const rootReducer = (state = initialState, action) => {
          return {
             ...state,
             timer: action.payload
+         };
+      case ACTION_SET_RANDOM:
+         return {
+            ...state,
+            random: Math.floor(Math.random() * 6)
          };
    }
    return state

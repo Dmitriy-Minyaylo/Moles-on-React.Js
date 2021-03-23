@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import StartScreen from '../Start'
-import MainScreen from '../Game-field';
+import GameField from '../GameField';
 
 const App = () => {
-
 
    const [flag, setFlag] = useState(false)
 
@@ -15,7 +14,7 @@ const App = () => {
       <div className="App">
          <header className="App-header">
             {flag ?
-               <MainScreen /> :
+               <GameField /> :
                <StartScreen onClickProp={handleClick} />
             }
          </header>

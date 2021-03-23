@@ -1,4 +1,4 @@
-import { ACTION_SET_COUNT_WIN, ACTION_SET_COUNT_FAIL, ACTION_SET_LVL, ACTION_SET_TIMER } from '../index';
+import { ACTION_SET_COUNT_WIN, ACTION_SET_COUNT_FAIL, ACTION_SET_LVL, ACTION_SET_TIMER, ACTION_SET_RANDOM } from './constAction';
 
 export const setCountWin = (newData) => {
    return {
@@ -27,3 +27,9 @@ export const setTimer = (newData) => {
       payload: newData
    }
 }
+export const setRandom = () => {
+   return {
+      type: ACTION_SET_RANDOM
+   }
+}
+

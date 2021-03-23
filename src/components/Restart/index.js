@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { setCountWin, setCountFail, setLvl, setTimer } from '../../../store/action'
+import { setCountWin, setCountFail, setLvl, setTimer } from '../../store/action'
 
 
 const Restart = ({

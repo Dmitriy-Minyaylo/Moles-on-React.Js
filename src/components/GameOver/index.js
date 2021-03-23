@@ -1,7 +1,7 @@
 import React from 'react';
 import './GameOverScreen.css';
 import images from './images.jpg';
-import Restart from '../common/restart/index';
+import Restart from '../Restart';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setCountWin, setCountFail, setLvl, setTimer } from '../../store/action'

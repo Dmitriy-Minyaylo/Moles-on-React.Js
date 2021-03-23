@@ -1,12 +1,12 @@
 import React from 'react';
 import Hole from '../Hole';
-import Score from '../Score-info';
+import Score from '../ScoreInfo';
 import GameOver from '../GameOver';
 import WinGame from '../WinGame';
 import { connect } from 'react-redux';
 import './game-field.css';
 
-const MainScreen = ({
+const GameField = ({
    countFail,
    countWin,
 }) => {
@@ -42,5 +42,5 @@ const pushStateToProps = (state) => {
    }
 }
 
-export default connect(pushStateToProps)(MainScreen)
+export default connect(pushStateToProps)(GameField)
 
