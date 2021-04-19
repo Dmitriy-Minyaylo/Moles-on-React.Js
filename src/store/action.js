@@ -1,9 +1,9 @@
-import { ACTION_SET_COUNT_WIN, ACTION_SET_COUNT_FAIL, ACTION_SET_LVL, ACTION_SET_TIMER, ACTION_SET_RANDOM } from './constAction';
+import { ACTION_SET_COUNT_WIN, ACTION_SET_COUNT_FAIL, ACTION_SET_LVL, ACTION_SET_TIMER, ACTION_SET_ACTIVE_GRID } from './constAction';
 
-export const setCountWin = (newData) => {
+export const setCountWin = (countWin) => {
    return {
       type: ACTION_SET_COUNT_WIN,
-      payload: newData
+      payload: countWin
    }
 }
 
@@ -27,9 +27,9 @@ export const setTimer = (newData) => {
       payload: newData
    }
 }
-export const setRandom = () => {
+export const setActiveGrid = () => {
    return {
-      type: ACTION_SET_RANDOM
+      type: ACTION_SET_ACTIVE_GRID
    }
 }
 

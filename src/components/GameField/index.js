@@ -26,7 +26,7 @@ const GameField = ({
                <WinGame />
                : countFail === 3 ?
                   <GameOver />
-                  : "падает по истичению времени"
+                  : "КОНЕЦ"
          }
       </div>
    )
@@ -34,7 +34,7 @@ const GameField = ({
 
 
 const pushStateToProps = (state) => {
-   console.log("state", state);
+   // console.log("state", state);
 
    return {
       countWin: state.countWin,

@@ -1,4 +1,4 @@
-import { ACTION_SET_COUNT_WIN, ACTION_SET_COUNT_FAIL, ACTION_SET_LVL, ACTION_SET_TIMER, ACTION_SET_RANDOM } from './constAction'
+import { ACTION_SET_COUNT_WIN, ACTION_SET_COUNT_FAIL, ACTION_SET_LVL, ACTION_SET_TIMER, ACTION_SET_ACTIVE_GRID } from './constAction'
 
 
 //стартовое состояние 
@@ -7,18 +7,20 @@ const initialState = {
    countFail: 0,
    lvl: 1,
    timer: 4000,
-   random: Math.floor(Math.random() * 6)
+   activeGrid: null
 }
 
 export const rootReducer = (state = initialState, action) => {
    switch (action.type) {
       case ACTION_SET_COUNT_WIN:
+         console.log("countWin in reducer", action.payload);
+
          return {
             ...state,
             countWin: action.payload
          };
       case ACTION_SET_COUNT_FAIL:
-         console.log("in reducer", action.payload);
+         console.log("countFail in reducer", action.payload);
          return {
             ...state,
             countFail: action.payload
@@ -33,10 +35,11 @@ export const rootReducer = (state = initialState, action) => {
             ...state,
             timer: action.payload
          };
-      case ACTION_SET_RANDOM:
+      case ACTION_SET_ACTIVE_GRID:
+
          return {
             ...state,
-            random: Math.floor(Math.random() * 6)
+            activeGrid: Math.floor(Math.random() * 6)
          };
    }
    return state
